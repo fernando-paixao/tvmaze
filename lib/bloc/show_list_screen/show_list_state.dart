@@ -3,8 +3,9 @@ part of 'show_list_bloc.dart';
 abstract class ShowListState {
   //extends Equatable
   final List<Show> currentShowList; //List<Seed>
+  final int page; //List<Seed>
 
-  const ShowListState({this.currentShowList});
+  const ShowListState({this.currentShowList, this.page});
 }
 
 //Os ESTADOS do BLoC ficarão aqui, com regras de quais parâmetros serão expostos para a UI
@@ -24,7 +25,18 @@ class ShowListLoading extends ShowListState {
 }
 
 class ShowListLoaded extends ShowListState {
-  ShowListLoaded(this.updatedShowList)
+  ShowListLoaded(this.updatedShowList, this.page)
+      : super(currentShowList: updatedShowList, page: page);
+
+  final List<Show> updatedShowList; //List<Seed>
+  int page;
+
+  //@override
+  List<Object> get props => [currentShowList, page];
+}
+
+class ShowFilteredListLoaded extends ShowListState {
+  ShowFilteredListLoaded(this.updatedShowList)
       : super(currentShowList: updatedShowList);
 
   final List<Show> updatedShowList; //List<Seed>

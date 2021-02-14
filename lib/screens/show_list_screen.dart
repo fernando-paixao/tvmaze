@@ -33,9 +33,6 @@ class _ShowListScreenState extends State<ShowListScreen> {
         onChanged: (String value) {
           _onSearchChanged(value);
         },
-        /*validator: (String value) {
-              return value.contains('@') ? 'Do not use the @ char.' : null;
-            },*/
       ),
       ShowListResultScreen(),
     ]));
@@ -44,8 +41,10 @@ class _ShowListScreenState extends State<ShowListScreen> {
   _onSearchChanged(String value) {
     if (_debounce?.isActive ?? false) _debounce.cancel();
     _debounce = Timer(const Duration(milliseconds: 500), () {
-      print("onchanged");
-      BlocProvider.of<ShowListBloc>(context).add(RetrieveFilteredList(value));
+      if (value.isNotEmpty) {
+        BlocProvider.of<ShowListBloc>(context).add(RetrieveFilteredList(value));
+      } else
+        BlocProvider.of<ShowListBloc>(context).add(RetrieveList());
     });
   }
 }

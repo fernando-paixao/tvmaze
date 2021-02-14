@@ -7,8 +7,8 @@ class ApiRequester {
 
   ApiRequester({this.baseUrl = TvMazeConstants.BASE_URL});
 
-  Future<Response> getShows() async {
-    String url = '$baseUrl${TvMazeConstants.SHOWS_ROUTE}';
+  Future<Response> getShows({int page = 0}) async {
+    String url = '$baseUrl${TvMazeConstants.SHOWS_ROUTE_PAGINATED(page)}';
     return await http.get(url);
   }
 

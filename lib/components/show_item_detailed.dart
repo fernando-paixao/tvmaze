@@ -2,6 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:jobsityChallenge/models/show.dart';
 
+import 'image_container.dart';
+
 class ShowItemDetailed extends StatelessWidget {
   final Show show;
 
@@ -11,16 +13,14 @@ class ShowItemDetailed extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        //Text("Imagem: " + show.imageUrl),
-        if (show.imageUrl != null)
-          Image.network(
-            show.imageUrl,
-            height: 200,
-          ),
+        if (show.imageUrl != null) ImageContainer(show.imageUrl),
         Text("Name: " + show.name),
         Text("Genres: " + show.genres.join(", ")),
-        Text("Summary:"),
-        Html(data: show.summary),
+        if (show.summary != null)
+          Column(children: [
+            Text("Summary:"),
+            Html(data: show.summary),
+          ]),
         Text("Days: " + show.scheduleDays.join(", ")),
         Text("Time: " + show.scheduleTime),
       ],

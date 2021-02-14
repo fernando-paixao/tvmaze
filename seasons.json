@@ -1,0 +1,437 @@
+[
+    {
+        "id": 72,
+        "url": "http://www.tvmaze.com/seasons/72/supernatural-season-1",
+        "number": 1,
+        "name": "",
+        "episodeOrder": 22,
+        "premiereDate": "2005-09-13",
+        "endDate": "2006-05-04",
+        "network": {
+            "id": 71,
+            "name": "The WB",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60927.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60927.jpg"
+        },
+        "summary": "<p>The Creepy. The Demented. The Unexplained. The Unearthly. Sam Winchester grew up hunting such terrifying things. But that's all past. Law school beckons him. So does safety and normalcy. That is, until Sam's estranged brother Dean appears with troubling news: their father has disappeared, a man who's hunted evil for 22 years. So to find their father, the brothers must hunt what their father hunts…and Sam must return to the life he'd rather leave behind. Hold on tight for all 22 Season One Episodes of the edgy, hip series that has viewers in its grip and critics enthralled. Confront the Supernatural!</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/72"
+            }
+        }
+    },
+    {
+        "id": 73,
+        "url": "http://www.tvmaze.com/seasons/73/supernatural-season-2",
+        "number": 2,
+        "name": "",
+        "episodeOrder": 22,
+        "premiereDate": "2006-09-28",
+        "endDate": "2007-05-17",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60928.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60928.jpg"
+        },
+        "summary": "<p>The season follows Sam and Dean Winchester as they deal with their father's death and continue to hunt down the yellow-eyed demon known as Azazel, who caused the fire that led to the deaths of their mother over 20 years ago and later, Sam's girlfriend, Jessica Moore. They have assistance not only from their friend Bobby, but from new allies Ellen Harvelle, her daughter Jo, and Ash. Part of Azazel's master plan is eventually revealed as he gathers Sam and others like him, leading to Sam's death. Dean makes a deal with a crossroads demon to resurrect Sam in exchange for his soul, which will be collected in one year. In a final confrontation, in which Dean kills Azazel with The Colt using the last of the original bullets, a gate is opened, releasing hundreds of demons from Hell.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/73"
+            }
+        }
+    },
+    {
+        "id": 74,
+        "url": "http://www.tvmaze.com/seasons/74/supernatural-season-3",
+        "number": 3,
+        "name": "",
+        "episodeOrder": 16,
+        "premiereDate": "2007-10-04",
+        "endDate": "2008-05-15",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60929.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60929.jpg"
+        },
+        "summary": "<p>The season mainly focuses on trying to save Dean Winchester from his deal and tracking down the demons who were released from Hell. Along the way, the brothers meet Ruby, a black-eyed demon who also has an interest in Sam Winchester and claims to be able to help save Dean. Also, they meet Bela Talbot, an acquirer and seller of occult objects, who is constantly a thorn in their side. The brothers eventually learn what demon holds Dean's contract, a white-eyed demonic being of great power named Lilith, the very first and oldest demon in creation. The brothers, along with Ruby, track her down and attempt to kill her. Lilith is unable to stop Sam due to his demonic powers, however. Dean's contract then expires and his soul is taken to Hell.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/74"
+            }
+        }
+    },
+    {
+        "id": 75,
+        "url": "http://www.tvmaze.com/seasons/75/supernatural-season-4",
+        "number": 4,
+        "name": "",
+        "episodeOrder": 22,
+        "premiereDate": "2008-09-18",
+        "endDate": "2009-05-14",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60930.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60930.jpg"
+        },
+        "summary": "<p>After spending four long, horrific months in Hell, Dean Winchester is miraculously raised from the Underworld and resurrected by an angel of the Lord God Himself named Castiel, one of several angels who appears throughout the season. After Dean reunites with his father-figure friend Bobby and his brother Sam, the rest of the season follows the brothers, with the help of their friend Bobby, as they work with Castiel and his subordinate and friend Uriel to stop Lilith's plan of breaking the 66 Seals, which would allow the fallen archangel Lucifer himself, AKA Satan or The Devil (who was once the favored angel of God but rebelled against Heaven for not serving humans and therefore was cast down), to be released from his cage in Hell.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/75"
+            }
+        }
+    },
+    {
+        "id": 76,
+        "url": "http://www.tvmaze.com/seasons/76/supernatural-season-5",
+        "number": 5,
+        "name": "",
+        "episodeOrder": 22,
+        "premiereDate": "2009-09-10",
+        "endDate": "2010-05-13",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60931.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60931.jpg"
+        },
+        "summary": "<p>Immediately after Sam frees Lucifer from Hell, he and Dean become targets of both Heaven and Hell. They are threats because they are destined to be the respective vessels of Lucifer and the Archangel Michael, the eldest of the archangels and the one responsible to casting Lucifer from Heaven, who will fight in a destined match to determine Earth's future. This would result in the deaths of millions of innocent people who would be in the crosshairs. If Dean refuses Michael, Lucifer will destroy the human race with the Four Horsemen, the living embodiments of the four plagues, however Sam saying yes to Lucifer will only speed up the devil's plans. Additionally Bobby is crippled and wheelchair-bound. Faced with no other choice, Sam and Dean team up with their angel ally and friend Castiel to look for a means to defeat both Heaven and Hell whilst battling angels, demons and even archangels.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/76"
+            }
+        }
+    },
+    {
+        "id": 77,
+        "url": "http://www.tvmaze.com/seasons/77/supernatural-season-6",
+        "number": 6,
+        "name": "",
+        "episodeOrder": 22,
+        "premiereDate": "2010-09-24",
+        "endDate": "2011-05-20",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60934.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60934.jpg"
+        },
+        "summary": "<p>The sixth season begins about a year after the end happenings of the fifth with Dean living a normal life with Lisa Braeden and her son Ben. Sam mysteriously and miraculously returns to Earth and reunites with Dean, who leaves his new life behind. Sam has been working with their grandfather, Samuel Campbell (their mother's father), in order to capture the Alpha monsters (first of the gene pool). Bobby eventually gets his soul back from the crossroads demon Crowley, who has apparently become the King of Hell. It is eventually discovered that Samuel is following Crowley's orders in exchange for the resurrection of his daughter, Sam and Dean's mother. Castiel is barely helpful anymore because a civil war in Heaven against the archangel Raphael (who wants to take over Heaven, free both Michael and Lucifer from the Cage, and start the Apocalypse again) has taken its toll. Crowley wants to use the Alpha Monsters to locate Purgatory, a supernatural realm that is filled with the souls of every monster that has ever been killed (vampires, werewolves, wendigos, skinwalkers, even shapeshifters etc.) and in which there are a vast collection of souls that could be used for power. Castiel brought back Sam without his soul, and Dean implores the help of the Horseman Death in order to retrieve it. Death puts a wall up in Sam's mind so that he will not remember Hell. Sam's original personality is restored with no memory of the past year and a half. It turns out Castiel made a deal with Crowley for both of them to receive half of the souls in Purgatory. Dean doesn't like the idea and tries to stop the duo. To stop the Winchesters and Bobby Singer, Castiel knocks down the mental barrier in Sam. Castiel betrays Crowley, who then allies himself with Raphael and performs the ritual to open the doors of Purgatory. It fails because they had fake dog's blood and Castiel appears full of power from having done the ritual himself. He obliterates Raphael and Crowley escapes. When the Winchesters try to reason with Castiel, he reveals that he is not an angel anymore, he has become the new God.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/77"
+            }
+        }
+    },
+    {
+        "id": 78,
+        "url": "http://www.tvmaze.com/seasons/78/supernatural-season-7",
+        "number": 7,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2011-09-23",
+        "endDate": "2012-05-18",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60935.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60935.jpg"
+        },
+        "summary": "<p>In season seven, the events take place right after the angel Castiel absorbed the souls of Purgatory declares himself as the new God. And the \"mutated angel\" goes around the planet to try and finish his \"work\". But eventually, thanks to a little bit of help from the Horseman Death, Winchesters convince the angel to return all the souls back to Purgatory. But Castiel manages to return all but the souls of some older creatures. Something in which the Winchesters will find themselves in an increasingly sinister, changing landscape, as they go up against this new foe, which is unlike anything they've ever fought before: the Leviathans, the very first beasts created by God Himself, but were then locked away in Purgatory for being too destructive. They brothers will find their old tricks, weapons and hiding places all rendered useless. All they'll have is each other. And the certainty that, like the last of the cowboy outlaws, whatever they face, they're not going down without a fight.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/78"
+            }
+        }
+    },
+    {
+        "id": 79,
+        "url": "http://www.tvmaze.com/seasons/79/supernatural-season-8",
+        "number": 8,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2012-10-03",
+        "endDate": "2013-05-15",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60936.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60936.jpg"
+        },
+        "summary": "<p>One year after the defeat of the Leviathans, Dean escapes Purgatory, with a vampire-comrade-in-arms named Benny, and reunites with Sam who has retired from hunting much to Dean's anger. Not long after Dean discovers that Kevin had escaped Crowley's abduction months ago which Sam was unaware of. Kevin reveals that he stole another Word of God from Crowley about Demons and discovered the means of closing Hell forever with all demons inside. Now reunited Sam and Dean embark on their monster hunts while Kevin continues to translate the tablet to stop Crowley and his plotting.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/79"
+            }
+        }
+    },
+    {
+        "id": 80,
+        "url": "http://www.tvmaze.com/seasons/80/supernatural-season-9",
+        "number": 9,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2013-10-08",
+        "endDate": "2014-05-20",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60937.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60937.jpg"
+        },
+        "summary": "<p>Immediately after the fall of the angels caused by the angel Metatron, the Scribe of God, Sam falls into a coma from the effects of the trials to close the gates of Hell and almost dies. With Castiel unable to help (having lost his grace), Dean seeks the aid of another angel named Ezekiel, whose only option to save Sam from his wounds is to possess him. Dean accepts, and helps Ezekiel trick Sam into giving his consent against his knowledge. The three of them, with Kevin (and Crowley as their prisoner), work to find a means to put the angels back in Heaven and are also forced to deal with Knight of Hell, Abaddon, who is attempting to seize control of Hell in Crowley's absence and enforce her reign of Hell on earth. Also a newly human Castiel must continue to run from the thousands of angels who blame him for their setbacks including many of whom are now lead by Bartholomew and Malachi seeking to restore themselves back to Heaven under their respective leadership's. Sam and Dean (with the help of Ezekiel) deal with regular hunting cases with help from old friends such as Charlie and Jody, but over time Sam begins to notice that something isn't right with him which Dean wants to tell Sam about but Ezekiel insists that his presence must remain secret. Eventually, Metatron returns to Earth and Ezekiel is revealed to actually be the angel Gadreel, the former protector of the Garden of Eden picked by God Himself to protect the Garden but failed by letting Lucifer into the Garden and was then punished by being locked away in Heaven's darkest dungeon. Metatron makes a deal with Gadreel to rebuild Heaven together by allowing certain angels to return which Gadreel, seeking to redeem himself accepts. Dean discovers Gadreel's deception and tries to warn Sam, but Gadreel takes full control and kills Kevin. Meanwhile, Castiel reclaims his powers by stealing the grace of another angel. Dean and Castiel team up with Crowley to expel Gadreel from Sam's body, but are forced to let the King of Hell go in exchange for his help.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/80"
+            }
+        }
+    },
+    {
+        "id": 81,
+        "url": "http://www.tvmaze.com/seasons/81/supernatural-season-10",
+        "number": 10,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2014-10-07",
+        "endDate": "2015-05-20",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60938.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60938.jpg"
+        },
+        "summary": "<p>Season 10 begins with Sam's frantic search for his missing brother, who is gone without a trace. The road to recovering the wayward Dean takes Sam down dark paths, with consequences that will shake the boys to their core. Along the way, Sam encounters a former US marine named Cole Trenton, who apparently knows Dean and wants revenge for Dean killing his father. Meanwhile, Castiel, with the aid of Hannah, has to pick up the pieces in the aftermath of Metatron's campaign. But with his grace failing and rogue angels still on the loose, Cas faces the ticking clock of his own mortality. After Sam learns that Dean is a demon, because of Crowley and the Mark of Cain, Sam eventually finds him, with help from Crowley, but so does Cole. While Dean and Cole meet and duke it out, Dean overpowers Cole and nearly kills him. But Sam manages to trap Dean with holy water and handcuffs carved with devils-trap symbols.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/81"
+            }
+        }
+    },
+    {
+        "id": 7958,
+        "url": "http://www.tvmaze.com/seasons/7958/supernatural-season-11",
+        "number": 11,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2015-10-07",
+        "endDate": "2016-05-25",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/42/105214.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/42/105214.jpg"
+        },
+        "summary": "",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/7958"
+            }
+        }
+    },
+    {
+        "id": 47965,
+        "url": "http://www.tvmaze.com/seasons/47965/supernatural-season-12",
+        "number": 12,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2016-10-13",
+        "endDate": "2017-05-18",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/149/374775.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/149/374775.jpg"
+        },
+        "summary": null,
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/47965"
+            }
+        }
+    },
+    {
+        "id": 59843,
+        "url": "http://www.tvmaze.com/seasons/59843/supernatural-season-13",
+        "number": 13,
+        "name": "",
+        "episodeOrder": 23,
+        "premiereDate": "2017-10-12",
+        "endDate": "2018-05-17",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/149/374776.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/149/374776.jpg"
+        },
+        "summary": null,
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/59843"
+            }
+        }
+    },
+    {
+        "id": 82618,
+        "url": "http://www.tvmaze.com/seasons/82618/supernatural-season-14",
+        "number": 14,
+        "name": "",
+        "episodeOrder": 20,
+        "premiereDate": "2018-10-11",
+        "endDate": "2019-04-25",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/212/532018.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/212/532018.jpg"
+        },
+        "summary": null,
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/82618"
+            }
+        }
+    },
+    {
+        "id": 93554,
+        "url": "http://www.tvmaze.com/seasons/93554/supernatural-season-15",
+        "number": 15,
+        "name": "",
+        "episodeOrder": 20,
+        "premiereDate": "2019-10-10",
+        "endDate": "2020-11-19",
+        "network": {
+            "id": 5,
+            "name": "The CW",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            }
+        },
+        "webChannel": null,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/212/532019.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/212/532019.jpg"
+        },
+        "summary": null,
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/seasons/93554"
+            }
+        }
+    }
+]

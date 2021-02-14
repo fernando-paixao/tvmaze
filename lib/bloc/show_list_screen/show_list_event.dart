@@ -9,6 +9,10 @@ abstract class ShowListEvent {
 //Os EVENTOS do BLoC ficarão aqui, com regras de quais parâmetros serão expostos para a BLoC
 
 class RetrieveList extends ShowListEvent {
+  int page;
+
+  RetrieveList({this.page = 0});
+
   //@override
   //List<Object> get props => throw UnimplementedError();
 }

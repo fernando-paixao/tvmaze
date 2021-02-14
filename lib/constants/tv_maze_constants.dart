@@ -3,6 +3,8 @@ class TvMazeConstants {
   static const String SHOWS_ROUTE = '/shows'; //URL_LOAD
   static const String SEASONS_ROUTE = '/seasons';
 
+  static String SHOWS_ROUTE_PAGINATED(int page) =>
+      '$SHOWS_ROUTE?page=$page'; //URL_SEARCH
   static String SEARCH_SHOWS_ROUTE(String term) =>
       '/search/shows?q=$term'; //URL_SEARCH
   static String SEARCH_SHOW_CAST_ROUTE(String id) =>

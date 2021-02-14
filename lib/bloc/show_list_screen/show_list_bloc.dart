@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:jobsityChallenge/models/show.dart';
-//import 'package:equatable/equatable.dart';
 import 'package:jobsityChallenge/services/api.dart';
 
 part 'show_list_event.dart';
@@ -11,15 +10,12 @@ part 'show_list_state.dart';
 class ShowListBloc extends Bloc<ShowListEvent, ShowListState> {
   ShowListBloc() : super(ShowListLoading());
 
-  //ShowListBloc(this.seedRepository) : super(ShowListLoading());
-  // final SeedRepository seedRepository;
-
   @override
   Stream<ShowListState> mapEventToState(
     ShowListEvent event,
   ) async* {
     if (event is RetrieveList) {
-      yield* _retrieveList();
+      yield* _retrieveList(event);
     } else if (event is RetrieveFilteredList) {
       yield* _retrieveFilteredList(event);
     }
@@ -31,13 +27,13 @@ class ShowListBloc extends Bloc<ShowListEvent, ShowListState> {
     print('${transition.currentState} -- ${transition.nextState}');
   }
 
-  Stream<ShowListState> _retrieveList() async* {
+  Stream<ShowListState> _retrieveList(RetrieveList event) async* {
     yield ShowListLoading();
 
-    List<Show> showsFiltered = await Api().getShows();
+    List<Show> showsFiltered = await Api().getShows(page: event.page);
     if (showsFiltered != null && showsFiltered.length > 0) {
       await Future.delayed(Duration(milliseconds: 300));
-      yield ShowListLoaded(showsFiltered);
+      yield ShowListLoaded(showsFiltered, event.page);
     } else {
       yield ShowListEmpty();
     }
@@ -51,7 +47,7 @@ class ShowListBloc extends Bloc<ShowListEvent, ShowListState> {
     List<Show> showsFiltered = await Api().getShowsFiltered(search);
     if (showsFiltered != null && showsFiltered.length > 0) {
       await Future.delayed(Duration(milliseconds: 300));
-      yield ShowListLoaded(showsFiltered);
+      yield ShowFilteredListLoaded(showsFiltered);
     } else {
       yield ShowListEmpty();
     }

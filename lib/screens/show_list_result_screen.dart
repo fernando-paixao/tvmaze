@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jobsityChallenge/bloc/show_list_screen/show_list_bloc.dart';
+import 'package:jobsityChallenge/components/pagination.dart';
 import 'package:jobsityChallenge/components/show_item.dart';
 import 'package:jobsityChallenge/models/show.dart';
 
@@ -27,6 +28,9 @@ class _ShowListResultScreenState extends State<ShowListResultScreen> {
         else if (state is ShowListLoading)
           return _buildShowListLoading(context);
         else if (state is ShowListLoaded)
+          return _buildShowListLoaded(context, state.updatedShowList,
+              page: state.page); //state.updatedShowList
+        else if (state is ShowFilteredListLoaded)
           return _buildShowListLoaded(
               context, state.updatedShowList); //state.updatedShowList
         else if (state is ShowListError)
@@ -59,11 +63,21 @@ class _ShowListResultScreenState extends State<ShowListResultScreen> {
         text: "loading",
       );
 
-  Widget _buildShowListLoaded(BuildContext context, List<Show> updatedOtpList) {
-    var listItems = List.generate(
+  Widget _buildShowListLoaded(BuildContext context, List<Show> updatedOtpList,
+      {int page}) {
+    var showItems = List.generate(
       updatedOtpList.length,
       (index) => ShowItem(updatedOtpList.elementAt(index)),
     );
+
+    List<Widget> listItems = [];
+    if (page != null) {
+      listItems.add(Pagination(page, showItems.length));
+    }
+    listItems.addAll(showItems);
+    if (page != null) {
+      listItems.add(Pagination(page, showItems.length));
+    }
 
     return Expanded(
         child: ListView(

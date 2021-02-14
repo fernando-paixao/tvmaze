@@ -1,0 +1,486 @@
+[
+    {
+        "id": 991,
+        "url": "http://www.tvmaze.com/episodes/991/supernatural-1x01-pilot",
+        "name": "Pilot",
+        "season": 1,
+        "number": 1,
+        "type": "regular",
+        "airdate": "2005-09-13",
+        "airtime": "21:00",
+        "airstamp": "2005-09-14T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12577.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12577.jpg"
+        },
+        "summary": "<p>Two brothers, Sam and Dean Winchester, witness their mother's paranormal death as children and grow up trained to fight by a distraught father who wants nothing more then to hunt down the thing that killed his wife. Sam escapes to college to start a new, normal life, but gets pulled back in after Dean shows up on his doorstep to tell him their father is missing. Following clues from an eerie phone message from him, the boys travel to a small town and encounter a vengeful spirit called the \"Woman in White\" who then starts to haunt Sam.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/991"
+            }
+        }
+    },
+    {
+        "id": 992,
+        "url": "http://www.tvmaze.com/episodes/992/supernatural-1x02-wendigo",
+        "name": "Wendigo",
+        "season": 1,
+        "number": 2,
+        "type": "regular",
+        "airdate": "2005-09-20",
+        "airtime": "21:00",
+        "airstamp": "2005-09-21T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12578.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12578.jpg"
+        },
+        "summary": "<p>Sam and Dean follow the coordinates left in their father's journal and land in the middle of the woods where they investigate the disappearance of several campers. The two brothers soon learn they are dealing with a Wendigo, a creature made famous in Native America legends. A Wendigo is a former human whose cannibalism has transformed him into a creature with superhuman strength and speed that feasts on human flesh.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/992"
+            }
+        }
+    },
+    {
+        "id": 993,
+        "url": "http://www.tvmaze.com/episodes/993/supernatural-1x03-dead-in-the-water",
+        "name": "Dead in the Water",
+        "season": 1,
+        "number": 3,
+        "type": "regular",
+        "airdate": "2005-09-27",
+        "airtime": "21:00",
+        "airstamp": "2005-09-28T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12579.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12579.jpg"
+        },
+        "summary": "<p>Sam and Dean investigate a series of mysterious drownings written off as suicides. They discover the spirit is an angry little boy with the power to travel through water who is taking revenge on certain town inhabitants for a dark secret buried long ago. Dean forms a bond with a young boy who seems to have the power of premonition.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/993"
+            }
+        }
+    },
+    {
+        "id": 994,
+        "url": "http://www.tvmaze.com/episodes/994/supernatural-1x04-phantom-traveler",
+        "name": "Phantom Traveler",
+        "season": 1,
+        "number": 4,
+        "type": "regular",
+        "airdate": "2005-10-04",
+        "airtime": "21:00",
+        "airstamp": "2005-10-05T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12580.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12580.jpg"
+        },
+        "summary": "<p>On TransNational flight 2485, a man possessed by the spirit of the Phantom Traveler causes the plane to crash, leaving only five survivors left alive. Sam and Dean must exorcise the angry spirit before it attacks the survivors. The brothers realize the only way to do that is to take the battle to the skies.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/994"
+            }
+        }
+    },
+    {
+        "id": 995,
+        "url": "http://www.tvmaze.com/episodes/995/supernatural-1x05-bloody-mary",
+        "name": "Bloody Mary",
+        "season": 1,
+        "number": 5,
+        "type": "regular",
+        "airdate": "2005-10-11",
+        "airtime": "21:00",
+        "airstamp": "2005-10-12T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12581.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12581.jpg"
+        },
+        "summary": "<p>In suburban Nebraska, a group of partying high school teens jokingly dare their friend Charlie to look into the mirror and repeat \"Bloody Mary, Bloody Mary, Bloody Mary,\" not knowing this will unleash a series of mysterious murders. Sam and Dean realize that Bloody Mary has the power to travel through all reflective surfaces when she is hunting a victim. Worried that teens are accidentally summoning Bloody Mary, Sam and Dean race to destroy the violent spirit before she can kill again.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/995"
+            }
+        }
+    },
+    {
+        "id": 996,
+        "url": "http://www.tvmaze.com/episodes/996/supernatural-1x06-skin",
+        "name": "Skin",
+        "season": 1,
+        "number": 6,
+        "type": "regular",
+        "airdate": "2005-10-18",
+        "airtime": "21:00",
+        "airstamp": "2005-10-19T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12582.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12582.jpg"
+        },
+        "summary": "<p>Sam and Dean come to the aid of Sam's old college buddy after he is accused of a murder he swears he didn't commit. The brothers discover a shapeshifter is adopting the likenesses of others and murdering people. The brothers' race to stop the shapeshifter takes a terrifying turn when he shifts into the likeness of Dean.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/996"
+            }
+        }
+    },
+    {
+        "id": 997,
+        "url": "http://www.tvmaze.com/episodes/997/supernatural-1x07-hook-man",
+        "name": "Hook Man",
+        "season": 1,
+        "number": 7,
+        "type": "regular",
+        "airdate": "2005-10-25",
+        "airtime": "21:00",
+        "airstamp": "2005-10-26T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12583.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12583.jpg"
+        },
+        "summary": "<p>The infamous \"Hook Man,\" a vengeful spirit who kills his victims with a shiny hook that serves as his hand, terrorizes a small college town in Iowa. Sam and Dean learn that all the victims are connected to the daughter of a local minister and race to find and destroy the Hook Man¿s bones before he comes for them.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/997"
+            }
+        }
+    },
+    {
+        "id": 998,
+        "url": "http://www.tvmaze.com/episodes/998/supernatural-1x08-bugs",
+        "name": "Bugs",
+        "season": 1,
+        "number": 8,
+        "type": "regular",
+        "airdate": "2005-11-08",
+        "airtime": "21:00",
+        "airstamp": "2005-11-09T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12584.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12584.jpg"
+        },
+        "summary": "<p>After a construction worker is killed by insects burrowing into his brain, Sam and Dean investigate the town's history and find that the new housing development is being built on sacred Indian land. The Indians put a curse on the land after their reservation had been ravished and destroyed. Sam and Dean must find a way to survive and kill the deadly swarm of bees, locusts, spiders and beetles.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/998"
+            }
+        }
+    },
+    {
+        "id": 999,
+        "url": "http://www.tvmaze.com/episodes/999/supernatural-1x09-home",
+        "name": "Home",
+        "season": 1,
+        "number": 9,
+        "type": "regular",
+        "airdate": "2005-11-15",
+        "airtime": "21:00",
+        "airstamp": "2005-11-16T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12585.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12585.jpg"
+        },
+        "summary": "<p>Sam is haunted by a vision of a woman trapped in his childhood house and convinces a reluctant Dean that they need to go home. Upon arrival, they meet the woman in Sam's premonition and she reveals that the house is haunted. Looking into their personal history, the brothers discover their father had visited a psychic after their mother's death and they turn to the same woman for answers of their own. Together they discover a malevolent poltergeist has inhabited the house and set out to exorcise it, but are blindsided when another unseen spirit steps in.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/999"
+            }
+        }
+    },
+    {
+        "id": 1000,
+        "url": "http://www.tvmaze.com/episodes/1000/supernatural-1x10-asylum",
+        "name": "Asylum",
+        "season": 1,
+        "number": 10,
+        "type": "regular",
+        "airdate": "2005-11-22",
+        "airtime": "21:00",
+        "airstamp": "2005-11-23T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12586.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12586.jpg"
+        },
+        "summary": "<p>Sam and Dean investigate an abandoned sanitarium and discover that when the hospital was open, the patients held a revolt against the cruel and unusual punishments inflicted by the head doctor. While the brothers search the premises for four lost college students, the tortured spirits cause them to go insane, turning Dean against Sam.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1000"
+            }
+        }
+    },
+    {
+        "id": 1001,
+        "url": "http://www.tvmaze.com/episodes/1001/supernatural-1x11-scarecrow",
+        "name": "Scarecrow",
+        "season": 1,
+        "number": 11,
+        "type": "regular",
+        "airdate": "2006-01-10",
+        "airtime": "21:00",
+        "airstamp": "2006-01-11T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12587.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12587.jpg"
+        },
+        "summary": "<p>A town harbors a dark secret involving a malevolent scarecrow, which Dean investigates. Meanwhile, Sam believes he may be able to find their father somewhere in California.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1001"
+            }
+        }
+    },
+    {
+        "id": 1002,
+        "url": "http://www.tvmaze.com/episodes/1002/supernatural-1x12-faith",
+        "name": "Faith",
+        "season": 1,
+        "number": 12,
+        "type": "regular",
+        "airdate": "2006-01-17",
+        "airtime": "21:00",
+        "airstamp": "2006-01-18T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12588.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12588.jpg"
+        },
+        "summary": "<p>While battling a demon, Dean is electrocuted, resulting in permanent damage to his heart and leaving him with only a couple of months to live. A despondent Sam searches desperately for a way to save his brother and believes he may have found an answer through a preacher who claims to heal the incurable. However, Dean and Sam discover that the preacher is getting help from the Grim Reaper who is trading one life for another he feels is less worthy.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1002"
+            }
+        }
+    },
+    {
+        "id": 1003,
+        "url": "http://www.tvmaze.com/episodes/1003/supernatural-1x13-route-666",
+        "name": "Route 666",
+        "season": 1,
+        "number": 13,
+        "type": "regular",
+        "airdate": "2006-01-31",
+        "airtime": "21:00",
+        "airstamp": "2006-02-01T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12589.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12589.jpg"
+        },
+        "summary": "<p>Dean is contacted by his first love Cassie, an African-American girl, who asks him to come to Mississippi to investigate a string of racially motivated murders. Each murder is linked to a mysterious truck that seems to have no driver and leave no tracks. Sam is stunned to see this new side of his brother as Dean struggles to come to grips with the residual feelings he has for Cassie.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1003"
+            }
+        }
+    },
+    {
+        "id": 1004,
+        "url": "http://www.tvmaze.com/episodes/1004/supernatural-1x14-nightmare",
+        "name": "Nightmare",
+        "season": 1,
+        "number": 14,
+        "type": "regular",
+        "airdate": "2006-02-07",
+        "airtime": "21:00",
+        "airstamp": "2006-02-08T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12590.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12590.jpg"
+        },
+        "summary": "<p>Sam has a premonition in which a man is killed, but the murder is made to look like a suicide. Sam convinces Dean that they must investigate the case, but the two are puzzled when they fail to find anything that indicates that the death was supernatural in nature. That is, until they find out that Max, the reclusive son of the first victim, has been using his recently acquired power of telekinesis to kill the family members that once abused him. Sam also discovers Max's mother was killed by the same fiery demon that took his own mom.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1004"
+            }
+        }
+    },
+    {
+        "id": 1005,
+        "url": "http://www.tvmaze.com/episodes/1005/supernatural-1x15-the-benders",
+        "name": "The Benders",
+        "season": 1,
+        "number": 15,
+        "type": "regular",
+        "airdate": "2006-02-14",
+        "airtime": "21:00",
+        "airstamp": "2006-02-15T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12591.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12591.jpg"
+        },
+        "summary": "<p>Sam and Dean head to Minnesota where a young boy witnesses a man vanish into thin air. Upon searching for clues, Sam is abducted by what he assumes is a supernatural being, and Dean is left to search frantically for his brother. However, both are stunned when they realize the kidnappers are human, and using the captives as human prey for a twisted hunting expedition.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1005"
+            }
+        }
+    },
+    {
+        "id": 1006,
+        "url": "http://www.tvmaze.com/episodes/1006/supernatural-1x16-shadow",
+        "name": "Shadow",
+        "season": 1,
+        "number": 16,
+        "type": "regular",
+        "airdate": "2006-02-28",
+        "airtime": "21:00",
+        "airstamp": "2006-03-01T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12592.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12592.jpg"
+        },
+        "summary": "<p>While investigating a mysterious death in Chicago, Sam and Dean run into Meg, who is thrilled to see Sam again. The brothers soon discover Meg is behind the murders and attempt to catch her. Unfortunately, Meg is one step ahead of them and unleashes shadow spirits on the brothers to ambush them. Sam and Dean realize the trap isn't for them, but for their father.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1006"
+            }
+        }
+    },
+    {
+        "id": 1007,
+        "url": "http://www.tvmaze.com/episodes/1007/supernatural-1x17-hell-house",
+        "name": "Hell House",
+        "season": 1,
+        "number": 17,
+        "type": "regular",
+        "airdate": "2006-03-30",
+        "airtime": "21:00",
+        "airstamp": "2006-03-31T02:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12593.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12593.jpg"
+        },
+        "summary": "<p>Sam and Dean investigate a house haunted by the ghost of Mordecai, a man who killed his six daughters during the 1930s. The brothers discover a website dedicated to the Mordecai legend and realize the town is unknowingly conjuring up the evil spirit through the site.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1007"
+            }
+        }
+    },
+    {
+        "id": 1008,
+        "url": "http://www.tvmaze.com/episodes/1008/supernatural-1x18-something-wicked",
+        "name": "Something Wicked",
+        "season": 1,
+        "number": 18,
+        "type": "regular",
+        "airdate": "2006-04-06",
+        "airtime": "21:00",
+        "airstamp": "2006-04-07T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12594.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12594.jpg"
+        },
+        "summary": "<p>Sam and Dean investigate a small town in Wisconsin where children are falling into comas for no apparent reason. The brothers discover that a witch is creeping into the bedrooms of the children and stealing their life force. While battling the witch, Dean recalls a past mistake that almost cost Sam his life at the hands of the very same witch, an event which has fueled Dean's protectiveness over Sam and his blind obedience to his father.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1008"
+            }
+        }
+    },
+    {
+        "id": 1009,
+        "url": "http://www.tvmaze.com/episodes/1009/supernatural-1x19-provenance",
+        "name": "Provenance",
+        "season": 1,
+        "number": 19,
+        "type": "regular",
+        "airdate": "2006-04-13",
+        "airtime": "21:00",
+        "airstamp": "2006-04-14T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12595.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12595.jpg"
+        },
+        "summary": "<p>A young couple is murdered in their home shortly after buying an antique painting of a family portrait circa 1910. Upon reviewing the painting's provenance, Sam and Dean learn that everyone who has ever bought the painting has been murdered and race to discover how the portrait is causing the deaths before it can claim its next victim.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1009"
+            }
+        }
+    },
+    {
+        "id": 1010,
+        "url": "http://www.tvmaze.com/episodes/1010/supernatural-1x20-dead-mans-blood",
+        "name": "Dead Man's Blood",
+        "season": 1,
+        "number": 20,
+        "type": "regular",
+        "airdate": "2006-04-20",
+        "airtime": "21:00",
+        "airstamp": "2006-04-21T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12596.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12596.jpg"
+        },
+        "summary": "<p>After Daniel Elkins, a vampire hunter and John's mentor, is murdered, Sam and Dean are surprised when John himself shows up to solve the case. John discovers the vampires have taken an antique gun, which has the power to kill all supernatural beings. The Winchester family sets out to retrieve the gun from the vampires so they can use it to kill the demon that took Sam and Dean's mother.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1010"
+            }
+        }
+    },
+    {
+        "id": 1011,
+        "url": "http://www.tvmaze.com/episodes/1011/supernatural-1x21-salvation",
+        "name": "Salvation",
+        "season": 1,
+        "number": 21,
+        "type": "regular",
+        "airdate": "2006-04-27",
+        "airtime": "21:00",
+        "airstamp": "2006-04-28T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12597.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12597.jpg"
+        },
+        "summary": "<p>Sam has a vision of a family being attacked in the same manner as the attack on his mom, so he, Dean and John head off to Salvation, Iowa, to save this family and finally kill the demon using the Colt gun. However, Meg calls and lets the family know she is going to start killing their friends unless they return the gun. John meets Meg to deliver a fake gun, while the boys are left to deal with the demon.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1011"
+            }
+        }
+    },
+    {
+        "id": 1012,
+        "url": "http://www.tvmaze.com/episodes/1012/supernatural-1x22-devils-trap",
+        "name": "Devil's Trap",
+        "season": 1,
+        "number": 22,
+        "type": "regular",
+        "airdate": "2006-05-04",
+        "airtime": "21:00",
+        "airstamp": "2006-05-05T01:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/5/12598.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/5/12598.jpg"
+        },
+        "summary": "<p>On a mission to save their father from Meg, Sam and Dean seek help from an old family friend, Bobby. When Meg shows up on Bobby's doorstep, the brothers lure her into a trap and exorcise the demon from her body after learning where John is being held prisoner. While trying to rescue John, the demon shows up and a full battle ensues between the Winchesters and the demon they have been searching for all their lives.</p>",
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1012"
+            }
+        }
+    }
+]

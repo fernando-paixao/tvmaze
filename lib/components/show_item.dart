@@ -3,6 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:jobsityChallenge/models/show.dart';
 import 'package:jobsityChallenge/screens/show_details_screen.dart';
 
+import 'image_container.dart';
+
 class ShowItem extends StatelessWidget {
   final Show show;
 
@@ -12,20 +14,21 @@ class ShowItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        //Text("Imagem: " + show.imageUrl),
         if (show.imageUrl != null)
-          Image.network(
+          ImageContainer(
             show.imageUrl,
-            height: 200,
+            size: "big",
           ),
         Text("Name: " + show.name),
-        RaisedButton(onPressed: () {
-          print("clicked");
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ShowDetailsScreen(show)),
-          );
-        })
+        RaisedButton(
+          child: Text("See More"),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ShowDetailsScreen(show)),
+            );
+          },
+        )
       ],
     );
   }
