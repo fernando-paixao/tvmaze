@@ -19,7 +19,11 @@ class ShowItem extends StatelessWidget {
             show.imageUrl,
             size: "big",
           ),
-        Text("Name: " + show.name),
+        Text(
+          //"Name: " +
+          show.name,
+          style: Theme.of(context).textTheme.headline6,
+        ),
         RaisedButton(
           child: Text("See More"),
           onPressed: () {

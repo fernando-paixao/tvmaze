@@ -5,6 +5,8 @@ import 'package:jobsityChallenge/models/show_season.dart';
 import 'package:jobsityChallenge/screens/show_season_container.dart';
 import 'package:jobsityChallenge/services/api.dart';
 
+import '../styles.dart';
+
 class ShowDetailsScreen extends StatefulWidget {
   final Show show;
 
@@ -48,15 +50,18 @@ class _ShowDetailsScreen extends State<ShowDetailsScreen> {
     }
 
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-              child: ListView(
-            physics:
-                RangeMaintainingScrollPhysics(parent: BouncingScrollPhysics()),
-            children: list,
-          )),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(Styles.PADDING_SIZE),
+        child: Column(
+          children: [
+            Expanded(
+                child: ListView(
+              physics: RangeMaintainingScrollPhysics(
+                  parent: BouncingScrollPhysics()),
+              children: list,
+            )),
+          ],
+        ),
       ),
     );
   }

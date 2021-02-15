@@ -1,3 +1,5 @@
+import 'package:jobsityChallenge/services/api.dart';
+
 class Show {
   String id;
   String name;
@@ -6,9 +8,6 @@ class Show {
   String summary;
   String scheduleTime;
   List<String> scheduleDays;
-
-  //"image": {
-  //  "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/105/263741.jpg",
 
   Show({
     this.id,
@@ -23,18 +22,10 @@ class Show {
   factory Show.fromJson(Map<String, dynamic> json) {
     var showJson = (json.containsKey("show")) ? json["show"] : json;
 
-    String imageType = "original"; //original,medium
-    String image =
-        (showJson["image"] != null) ? showJson["image"][imageType] : null;
-    //String images = [ ["image"][imageType] ];
-/*
-Name
-Poster
-Days and time during which the series airs
-Genres
-Summary
-List of episodes separated by season
-*/
+    String image = (showJson["image"] != null)
+        ? showJson["image"][Api.IMAGE_QUALITY_KEY]
+        : null;
+
     return Show(
       id: showJson["id"].toString(),
       name: showJson["name"],

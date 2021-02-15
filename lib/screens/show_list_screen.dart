@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jobsityChallenge/bloc/show_list_screen/show_list_bloc.dart';
 
+import '../styles.dart';
 import 'show_list_result_screen.dart';
 
 class ShowListScreen extends StatefulWidget {
@@ -22,20 +23,23 @@ class _ShowListScreenState extends State<ShowListScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Column(children: [
-      TextFormField(
-        decoration: const InputDecoration(
-          icon: Icon(Icons.movie_filter),
-          hintText: 'Type here to search shows',
-          labelText: 'Find',
+    return Padding(
+      padding: const EdgeInsets.all(Styles.PADDING_SIZE),
+      child: Scaffold(
+          body: Column(children: [
+        TextFormField(
+          decoration: const InputDecoration(
+            icon: Icon(Icons.movie_filter),
+            hintText: 'Type here to search shows',
+            labelText: 'Find',
+          ),
+          onChanged: (String value) {
+            _onSearchChanged(value);
+          },
         ),
-        onChanged: (String value) {
-          _onSearchChanged(value);
-        },
-      ),
-      ShowListResultScreen(),
-    ]));
+        ShowListResultScreen(),
+      ])),
+    );
   }
 
   _onSearchChanged(String value) {

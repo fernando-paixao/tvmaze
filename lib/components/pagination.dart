@@ -13,15 +13,15 @@ class Pagination extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        //Text("Paginator: "),
-        if (page > 0)
-          RaisedButton(
-            child: Text("Previous"),
-            onPressed: () {
-              BlocProvider.of<ShowListBloc>(context)
-                  .add(RetrieveList(page: page - 1));
-            },
-          ),
+        (page > 0)
+            ? RaisedButton(
+                child: Text("Previous"),
+                onPressed: () {
+                  BlocProvider.of<ShowListBloc>(context)
+                      .add(RetrieveList(page: page - 1));
+                },
+              )
+            : SizedBox(),
         if (itemsLength != 0)
           RaisedButton(
             child: Text("Next"),

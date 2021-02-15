@@ -8,19 +8,23 @@ class ImageContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = 200;
+    Size size = MediaQuery.of(context).size;
+
+    double heightFactor = 7 / 10;
     if (size == "big") {
-      height = 250;
+      heightFactor = 3 / 4;
+    }
+    double widthFactor = 7 / 10;
+    if (size == "big") {
+      widthFactor = 3 / 4;
     }
 
     return ConstrainedBox(
-      constraints: BoxConstraints(maxWidth: 150),
+      constraints: BoxConstraints(
+          maxWidth: widthFactor * size.width,
+          maxHeight: heightFactor * size.height),
       child: Container(
-        //color: Colors.blue,
-        child: Image.network(
-          imageUrl,
-          height: height,
-        ),
+        child: Image.network(imageUrl),
       ),
     );
   }

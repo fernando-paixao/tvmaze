@@ -29,31 +29,15 @@ class _ShowListResultScreenState extends State<ShowListResultScreen> {
           return _buildShowListLoading(context);
         else if (state is ShowListLoaded)
           return _buildShowListLoaded(context, state.updatedShowList,
-              page: state.page); //state.updatedShowList
+              page: state.page);
         else if (state is ShowFilteredListLoaded)
-          return _buildShowListLoaded(
-              context, state.updatedShowList); //state.updatedShowList
+          return _buildShowListLoaded(context, state.updatedShowList);
         else if (state is ShowListError)
           return _buildShowListError(context);
-        //else if (state is ShowListErrorAlreadyExists)
-        //  return _buildShowBlocListLoaded(context, state.updatedShowList);
         else
           return _buildShowListError(context);
       },
-      listener: (context, state) {
-        //if (state is ShowListLoaded) {
-        //  _currentShowList = state.updatedShowList;
-        //}
-
-        /*else if (state is ShowListErrorAlreadyExists) {
-          Scaffold.of(context).showSnackBar(
-            SnackBar(
-              duration: Duration(milliseconds: 1500),
-              content: Text('Show já cadastrado.'),
-            ),
-          );
-        }*/
-      },
+      listener: (context, state) {},
     );
   }
 

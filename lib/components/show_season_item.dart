@@ -3,6 +3,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:jobsityChallenge/models/show_season.dart';
 
 import 'image_container.dart';
+import 'summary.dart';
 
 class ShowSeasonItem extends StatelessWidget {
   final ShowSeason showSeason;
@@ -16,11 +17,7 @@ class ShowSeasonItem extends StatelessWidget {
         if (showSeason.imageUrl != null) ImageContainer(showSeason.imageUrl),
         Text("Season Number: " + showSeason.number),
         Text("Name: " + showSeason.name),
-        if (showSeason.summary != null)
-          Column(children: [
-            Text("Summary:"),
-            Html(data: showSeason.summary),
-          ]),
+        Summary(showSeason.summary),
       ],
     );
   }

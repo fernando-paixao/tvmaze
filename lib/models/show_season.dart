@@ -1,3 +1,5 @@
+import 'package:jobsityChallenge/services/api.dart';
+
 class ShowSeason {
   String id;
   String name;
@@ -14,8 +16,8 @@ class ShowSeason {
   });
 
   factory ShowSeason.fromJson(Map<String, dynamic> json) {
-    String imageType = "original"; //original,medium
-    String image = (json["image"] != null) ? json["image"][imageType] : null;
+    String image =
+        (json["image"] != null) ? json["image"][Api.IMAGE_QUALITY_KEY] : null;
 
     return ShowSeason(
       id: json["id"].toString(),

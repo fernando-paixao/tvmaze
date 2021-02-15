@@ -7,18 +7,14 @@ import 'package:jobsityChallenge/models/show_season.dart';
 import 'package:jobsityChallenge/services/api_requester.dart';
 
 class Api {
-  static const int MAX_QTD_PER_PAGE = 250; //250 max per page
+  static const int MAX_QTD_PER_PAGE = 250;
+  static const String IMAGE_QUALITY_KEY = "original"; //medium
 
   ApiRequester apiRequester;
 
   Api({this.apiRequester}) {
-    //if (apiRequester == null) {
-    //  apiRequester = ApiRequester();
-    //}
     apiRequester = apiRequester ?? ApiRequester();
   }
-
-  //Response shows = await api.getShows();
 
   getShows({int page = 0}) async {
     Response showsResponse = await apiRequester.getShows(page: page);
@@ -29,10 +25,7 @@ class Api {
   getShowsFiltered(String search) async {
     Response showsFilteredResponse = await apiRequester.getShowsSearch(search);
     List<dynamic> showsFiltered = json.decode(showsFilteredResponse.body);
-    return showsFiltered
-        .map((e) => Show.fromJson(e))
-        //.take(QTD_PER_PAGE)
-        .toList();
+    return showsFiltered.map((e) => Show.fromJson(e)).toList();
   }
 
   getShowSeasons(String showId) async {
