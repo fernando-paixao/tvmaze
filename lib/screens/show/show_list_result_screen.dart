@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jobsityChallenge/bloc/show_list_screen/show_list_bloc.dart';
 import 'package:jobsityChallenge/components/pagination.dart';
-import 'package:jobsityChallenge/components/show_item.dart';
+import 'package:jobsityChallenge/components/show/show_item.dart';
 import 'package:jobsityChallenge/models/show.dart';
 
-import 'empty_list.dart';
+import '../empty_list.dart';
 
 class ShowListResultScreen extends StatefulWidget {
   @override

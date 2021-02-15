@@ -1,11 +1,6 @@
 part of 'show_list_bloc.dart';
 
-abstract class ShowListState {
-  /*final List<Show> currentShowList;
-  final int page;
-
-  const ShowListState({this.currentShowList, this.page});*/
-}
+abstract class ShowListState {}
 
 class ShowListEmpty extends ShowListState {}
 
@@ -16,12 +11,10 @@ class ShowListLoaded extends ShowListState {
   int page;
 
   ShowListLoaded(this.updatedShowList, this.page);
-  //: super(currentShowList: updatedShowList, page: page);
 }
 
 class ShowFilteredListLoaded extends ShowListState {
   ShowFilteredListLoaded(this.updatedShowList);
-  //: super(currentShowList: updatedShowList);
 
   final List<Show> updatedShowList;
 }

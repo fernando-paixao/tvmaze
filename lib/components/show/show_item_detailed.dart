@@ -4,7 +4,7 @@ import 'package:jobsityChallenge/components/schedule.dart';
 import 'package:jobsityChallenge/components/summary.dart';
 import 'package:jobsityChallenge/models/show.dart';
 
-import 'image_container.dart';
+import '../image_container.dart';
 
 class ShowItemDetailed extends StatelessWidget {
   final Show show;
@@ -21,7 +21,7 @@ class ShowItemDetailed extends StatelessWidget {
           show.name,
           style: Theme.of(context).textTheme.headline3,
         ),
-        if (show.genres.isNotEmpty) Text("Genres: " + show.genres.join(", ")),
+        if (show.genres.isNotEmpty) Text(show.genres.join(", ")), //"Genres: "
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Summary(show.summary),

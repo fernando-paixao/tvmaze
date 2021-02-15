@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:jobsityChallenge/models/show.dart';
 
 class Summary extends StatelessWidget {
   final String summary;
@@ -13,7 +12,10 @@ class Summary extends StatelessWidget {
         ? SizedBox()
         : Column(children: [
             //Text("Summary:"),
-            Html(data: summary),
+            Html(
+              data: summary,
+              defaultTextStyle: Theme.of(context).textTheme.bodyText2,
+            ),
           ]);
   }
 }

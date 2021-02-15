@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jobsityChallenge/bloc/show_list_screen/show_list_bloc.dart';
 
+import '../styles.dart';
+
 class Pagination extends StatelessWidget {
   final int page;
   final int itemsLength;
@@ -15,7 +17,13 @@ class Pagination extends StatelessWidget {
       children: [
         (page > 0)
             ? RaisedButton(
-                child: Text("Previous"),
+                child: Row(
+                  children: [
+                    Icon(Icons.navigate_before),
+                    Text("Previous"),
+                  ],
+                ),
+                color: Styles.lightGray,
                 onPressed: () {
                   BlocProvider.of<ShowListBloc>(context)
                       .add(RetrieveList(page: page - 1));
@@ -24,7 +32,13 @@ class Pagination extends StatelessWidget {
             : SizedBox(),
         if (itemsLength != 0)
           RaisedButton(
-            child: Text("Next"),
+            child: Row(
+              children: [
+                Text("Next"),
+                Icon(Icons.navigate_next),
+              ],
+            ),
+            color: Styles.lightGray,
             onPressed: () {
               BlocProvider.of<ShowListBloc>(context)
                   .add(RetrieveList(page: page + 1));

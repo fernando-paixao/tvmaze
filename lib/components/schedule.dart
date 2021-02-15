@@ -8,7 +8,7 @@ class Schedule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    //Size size = MediaQuery.of(context).size;
 
     return SizedBox(
       //constraints: BoxConstraints(maxWidth: size.width * 3 / 4),

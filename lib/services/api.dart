@@ -28,6 +28,18 @@ class Api {
     return showsFiltered.map((e) => Show.fromJson(e)).toList();
   }
 
+  getPeopleFiltered(String search) async {
+    Response peopleFilteredResponse = await apiRequester.getPerson(search);
+    List<dynamic> peopleFiltered = json.decode(peopleFilteredResponse.body);
+    return peopleFiltered.map((e) => Show.fromJson(e)).toList();
+  }
+
+  getPeopleCast(String personId) async {
+    Response personCastResponse = await apiRequester.getPersonCast(personId);
+    List<dynamic> showsFiltered = json.decode(personCastResponse.body);
+    return showsFiltered.map((e) => Show.fromJson(e)).toList();
+  }
+
   getShowSeasons(String showId) async {
     Response showSeasonsResponse = await apiRequester.getShowSeasons(showId);
     List<dynamic> showSeasons = json.decode(showSeasonsResponse.body);

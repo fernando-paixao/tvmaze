@@ -6,6 +6,15 @@ import 'package:jobsityChallenge/services/api_requester.dart';
 void main() async {
   var apiRequester = ApiRequester();
 
+  Response peopleSearchResponse =
+      await apiRequester.getPeopleSearch("Mike Vogel");
+  var people = json.decode(peopleSearchResponse.body);
+  var firstPerson = people[0]["person"];
+
+  Response personCastResponse =
+      await apiRequester.getPersonCast(firstPerson["id"].toString());
+  var personCast = json.decode(personCastResponse.body);
+
   Response showsResponse = await apiRequester.getShows();
   var shows = json.decode(showsResponse.body);
 
@@ -29,5 +38,8 @@ void main() async {
   var episodes = json.decode(seasonEpisodesResponse.body);
   var episode = episodes[0];
 
-  print(episode.toString() + showCastForReal.toString() + shows.toString());
+  print(episode.toString() +
+      showCastForReal.toString() +
+      shows.toString() +
+      personCast.toString());
 }

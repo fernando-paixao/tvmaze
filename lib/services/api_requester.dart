@@ -17,6 +17,21 @@ class ApiRequester {
     return await http.get(url);
   }
 
+  Future<Response> getPeopleSearch(String queryString) async {
+    String url = '$baseUrl${TvMazeConstants.SEARCH_PEOPLE_ROUTE(queryString)}';
+    return await http.get(url);
+  }
+
+  Future<Response> getPerson(String personId) async {
+    String url = '$baseUrl${TvMazeConstants.PERSON_ROUTE(personId)}';
+    return await http.get(url);
+  }
+
+  Future<Response> getPersonCast(String personId) async {
+    String url = '$baseUrl${TvMazeConstants.PERSON_CAST_SHOWS_ROUTE(personId)}';
+    return await http.get(url);
+  }
+
   Future<Response> getShowCast(String showId) async {
     String url = '$baseUrl${TvMazeConstants.SEARCH_SHOW_CAST_ROUTE(showId)}';
     return await http.get(url);

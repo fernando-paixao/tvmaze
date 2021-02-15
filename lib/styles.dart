@@ -7,21 +7,12 @@ class Styles {
   static Color accentColor = Color(0xFF004174);
   static Color otpColor = Color(0xFF19BDC2);
   static Color inputGray = Color(0xFF9AAAB8);
+  static Color lightGray = Colors.grey[100];
+  static Color mediumGray = Colors.grey[200];
   static Color disabledBorderColor = Color(0x889AAAB8);
   static Color otpContainerOpened = Color(0xFFF3F3F3);
 
   static const double PADDING_SIZE = 8.0;
-
-  static Animatable progressColor = TweenSequence<Color>([
-    TweenSequenceItem(
-      weight: 1.0,
-      tween: ColorTween(begin: Colors.green, end: Colors.yellow),
-    ),
-    TweenSequenceItem(
-      weight: 1.0,
-      tween: ColorTween(begin: Colors.yellow, end: Colors.red),
-    ),
-  ]);
 
   static double fontSizeScale(Size size) {
     double _fontSizeScale = 1.0;
