@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
+import 'package:jobsityChallenge/models/person.dart';
 import 'package:jobsityChallenge/models/season_episode.dart';
 import 'package:jobsityChallenge/models/show.dart';
 import 'package:jobsityChallenge/models/show_season.dart';
@@ -29,15 +30,18 @@ class Api {
   }
 
   getPeopleFiltered(String search) async {
-    Response peopleFilteredResponse = await apiRequester.getPerson(search);
+    Response peopleFilteredResponse =
+        await apiRequester.getPeopleSearch(search);
     List<dynamic> peopleFiltered = json.decode(peopleFilteredResponse.body);
-    return peopleFiltered.map((e) => Show.fromJson(e)).toList();
+    return peopleFiltered.map((e) => Person.fromJson(e)).toList();
   }
 
   getPeopleCast(String personId) async {
     Response personCastResponse = await apiRequester.getPersonCast(personId);
-    List<dynamic> showsFiltered = json.decode(personCastResponse.body);
-    return showsFiltered.map((e) => Show.fromJson(e)).toList();
+    List<dynamic> personCast = json.decode(personCastResponse.body);
+    return personCast
+        .map((e) => Show.fromJson(e["_embedded"]["show"]))
+        .toList();
   }
 
   getShowSeasons(String showId) async {

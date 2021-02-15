@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jobsityChallenge/components/person/person_item.dart';
 //import 'package:jobsityChallenge/components/person/person_item_detailed.dart';
 import 'package:jobsityChallenge/components/show/show_item.dart';
 import 'package:jobsityChallenge/constants/app_constants.dart';
 import 'package:jobsityChallenge/models/person.dart';
+import 'package:jobsityChallenge/models/show.dart';
 //import 'package:jobsityChallenge/models/person_season.dart';
 //import 'package:jobsityChallenge/screens/season/person_season_container.dart';
 import 'package:jobsityChallenge/services/api.dart';
@@ -20,7 +22,7 @@ class PersonDetailsScreen extends StatefulWidget {
 
 class _PersonDetailsScreen extends State<PersonDetailsScreen> {
   bool isLoaded;
-  List<ShowItem> shows;
+  List<Show> shows;
 
   void _loadSeasons() async {
     shows = await Api().getPeopleCast(widget.person.id);
@@ -38,18 +40,23 @@ class _PersonDetailsScreen extends State<PersonDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> list = [];
+    List<Widget> list = [
+      PersonItem(
+        widget.person,
+        titleSuffix: "Cast",
+      )
+    ];
     //PersonItemDetailed(widget.person),
     //];
-    /*if (isLoaded) {
-      var seasonItems = List.generate(
+    if (isLoaded) {
+      var showsItems = List.generate(
         shows.length,
-        (index) => PersonSeasonContainer(shows.elementAt(index)),
+        (index) => ShowItem(shows.elementAt(index)),
       );
-      list.addAll(seasonItems);
+      list.addAll(showsItems);
     } else {
       list.add(Text("Loading"));
-    }*/
+    }
 
     return Scaffold(
       /*drawer: Drawer(

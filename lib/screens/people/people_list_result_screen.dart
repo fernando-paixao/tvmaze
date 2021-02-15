@@ -21,7 +21,8 @@ class _PeopleListResultScreenState extends State<PeopleListResultScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<PeopleListBloc, PeopleListState>(
+    return //Text("broa");
+        BlocConsumer<PeopleListBloc, PeopleListState>(
       builder: (context, state) {
         if (state is PeopleListEmpty)
           return _buildPersonListEmpty(context);
