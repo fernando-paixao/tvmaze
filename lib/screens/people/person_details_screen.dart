@@ -62,7 +62,7 @@ class _PersonDetailsScreen extends State<PersonDetailsScreen> {
         title: Text(AppConstants.APP_TITLE),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(Styles.PADDING_SIZE),
+        padding: Styles.getMainEdgeInsets(),
         child: Column(
           children: [
             Expanded(
