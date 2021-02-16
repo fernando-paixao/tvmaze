@@ -25,25 +25,28 @@ class _PeopleListScreenState extends State<PeopleListScreen> {
   Widget build(BuildContext context) {
     return Padding(
       padding: Styles.getMainEdgeInsets(),
-      child: Column(children: [
-        TextFormField(
-          decoration: const InputDecoration(
-            icon: Padding(
-              padding: EdgeInsets.only(top: 24.0),
-              child: Icon(
-                Icons.person,
-                size: 32.0,
+      child: Container(
+        height: 500,
+        child: Column(children: [
+          TextFormField(
+            decoration: const InputDecoration(
+              icon: Padding(
+                padding: EdgeInsets.only(top: 24.0),
+                child: Icon(
+                  Icons.person,
+                  size: 32.0,
+                ),
               ),
+              hintText: 'Type here to search people',
+              labelText: 'Find',
             ),
-            hintText: 'Type here to search people',
-            labelText: 'Find',
+            onChanged: (String value) {
+              _onSearchChanged(value);
+            },
           ),
-          onChanged: (String value) {
-            _onSearchChanged(value);
-          },
-        ),
-        PeopleListResultScreen(),
-      ]),
+          PeopleListResultScreen(),
+        ]),
+      ),
     );
   }
 

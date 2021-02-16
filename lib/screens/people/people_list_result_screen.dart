@@ -62,15 +62,11 @@ class _PeopleListResultScreenState extends State<PeopleListResultScreen> {
       listItems.add(Pagination(page, personItems.length));
     }
 
-    return Column(
-      children: [
-        Expanded(
-            child: ListView(
-          physics:
-              RangeMaintainingScrollPhysics(parent: BouncingScrollPhysics()),
-          children: listItems,
-        )),
-      ],
+    return Flexible(
+      child: ListView(
+        physics: RangeMaintainingScrollPhysics(parent: BouncingScrollPhysics()),
+        children: listItems,
+      ),
     );
   }
 
