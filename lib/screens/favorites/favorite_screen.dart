@@ -61,7 +61,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
       );
       list.addAll(showsItems);
     } else if (isLoaded == false) {
-      list.add(Loading());
+      return Center(child: Loading());
     } else {
       list.add(Center(child: EmptyList()));
     }

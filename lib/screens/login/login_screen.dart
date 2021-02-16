@@ -20,12 +20,10 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         body: Padding(
             padding: Styles.getMainEdgeInsets(),
-            child: Expanded(
-              child: Column(
-                children: [
-                  LoginFormScreen(),
-                ],
-              ),
+            child: Column(
+              children: [
+                Expanded(child: LoginFormScreen()),
+              ],
             )));
   }
 }

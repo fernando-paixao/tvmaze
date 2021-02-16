@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:jobsityChallenge/components/loading.dart';
 
 class EmptyList extends StatelessWidget {
   final String text;
@@ -10,7 +11,7 @@ class EmptyList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: SizedBox(
-        child: Text(text),
+        child: (text == "loading") ? Loading() : Text(text),
       ),
     );
   }

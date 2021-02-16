@@ -107,57 +107,46 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
             child: Column(
               children: [
                 TextFormField(
-                  controller: _passwordController,
-                  obscureText: true,
-                  decoration: const InputDecoration(
-                    icon: Padding(
-                      padding: EdgeInsets.only(top: 24.0),
-                      child: Icon(
-                        Icons.lock,
-                        size: 32.0,
-                      ),
-                    ),
-                    hintText: 'Type your PIN password',
-                    labelText: 'Password',
-                  ),
-                ),
+                    controller: _passwordController,
+                    obscureText: true,
+                    decoration: const InputDecoration(
+                        icon: Padding(
+                          padding: EdgeInsets.only(top: 24.0),
+                          child: Icon(
+                            Icons.lock,
+                            size: 32.0,
+                          ),
+                        ),
+                        hintText: 'Type your PIN password',
+                        labelText: 'Password')),
                 if (canUseBiometricLogin && isActiveBiometricLogin)
                   Padding(
-                    padding: const EdgeInsets.only(top: 16.0),
-                    child: RaisedButton(
-                        child: Text("Biometric Login"),
-                        onPressed: () {
-                          _showBiometricLogin();
-                        }),
-                  )
+                      padding: const EdgeInsets.only(top: 16.0),
+                      child: RaisedButton(
+                          child: Text("Biometric Login"),
+                          onPressed: () => _showBiometricLogin()))
                 else if (canUseBiometricLogin && !isActiveBiometricLogin)
                   Padding(
                     padding: const EdgeInsets.only(top: 16.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text("Activate Biometric Login"),
-                        Switch(
-                          value: activateBiometricLogin,
-                          onChanged: (value) {
-                            setState(() {
-                              activateBiometricLogin = value;
-                            });
-                          },
-                          activeTrackColor: Colors.lightBlueAccent,
-                          activeColor: Colors.blue,
-                        ),
-                      ],
-                    ),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Activate Biometric Login"),
+                          Switch(
+                              value: activateBiometricLogin,
+                              onChanged: (value) => setState(
+                                  () => activateBiometricLogin = value),
+                              activeTrackColor: Colors.lightBlueAccent,
+                              activeColor: Colors.blue),
+                        ]),
                   ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: RaisedButton(
-                      child: (pinToMatch == null || pinToMatch.isEmpty)
-                          ? Text("Register")
-                          : Text("Login"),
-                      onPressed: () => _verify()),
-                )
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: RaisedButton(
+                        child: (pinToMatch == null || pinToMatch.isEmpty)
+                            ? Text("Register")
+                            : Text("Login"),
+                        onPressed: () => _verify()))
               ],
             ),
           );

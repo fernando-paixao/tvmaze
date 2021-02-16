@@ -62,11 +62,16 @@ class _PeopleListResultScreenState extends State<PeopleListResultScreen> {
       listItems.add(Pagination(page, personItems.length));
     }
 
-    return Expanded(
-        child: ListView(
-      physics: RangeMaintainingScrollPhysics(parent: BouncingScrollPhysics()),
-      children: listItems,
-    ));
+    return Column(
+      children: [
+        Expanded(
+            child: ListView(
+          physics:
+              RangeMaintainingScrollPhysics(parent: BouncingScrollPhysics()),
+          children: listItems,
+        )),
+      ],
+    );
   }
 
   Widget _buildPersonListError(BuildContext context) => EmptyList(

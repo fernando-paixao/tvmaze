@@ -16,7 +16,7 @@ class ShowListLoading extends ShowListState {
 
 class ShowListLoaded extends ShowListState {
   final List<Show> updatedShowList;
-  int page;
+  final int page;
 
   ShowListLoaded(this.updatedShowList, this.page);
   @override
