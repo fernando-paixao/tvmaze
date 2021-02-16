@@ -23,6 +23,12 @@ class Api {
     return shows.map((e) => Show.fromJson(e)).take(MAX_QTD_PER_PAGE).toList();
   }
 
+  getShow(String showId) async {
+    Response showsResponse = await apiRequester.getShow(showId);
+    Map<String, dynamic> show = json.decode(showsResponse.body);
+    return Show.fromJson(show);
+  }
+
   getShowsFiltered(String search) async {
     Response showsFilteredResponse = await apiRequester.getShowsSearch(search);
     List<dynamic> showsFiltered = json.decode(showsFilteredResponse.body);

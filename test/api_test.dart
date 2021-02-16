@@ -4,6 +4,7 @@ import 'package:jobsityChallenge/services/api.dart';
 void main() async {
   var api = Api();
 
+  var show = await api.getShow("1");
   var people = await api.getPeopleFiltered("Mike Vogel");
   Person person = people[0];
   var personCastShows = await api.getPeopleCast(person.id);
@@ -15,5 +16,6 @@ void main() async {
   print(showsFiltered.toString() +
       shows.toString() +
       seasonEpisodes.toString() +
-      personCastShows.toString());
+      personCastShows.toString() +
+      show.toString());
 }

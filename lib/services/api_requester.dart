@@ -12,6 +12,11 @@ class ApiRequester {
     return await http.get(url);
   }
 
+  Future<Response> getShow(String showId) async {
+    String url = '$baseUrl${TvMazeConstants.SHOW_ROUTE(showId)}';
+    return await http.get(url);
+  }
+
   Future<Response> getShowsSearch(String queryString) async {
     String url = '$baseUrl${TvMazeConstants.SEARCH_SHOWS_ROUTE(queryString)}';
     return await http.get(url);

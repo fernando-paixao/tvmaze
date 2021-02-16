@@ -1,3 +1,4 @@
+import 'package:jobsityChallenge/repository/favorite_shows_repository.dart';
 import 'package:jobsityChallenge/services/api.dart';
 
 class Show {
@@ -35,5 +36,17 @@ class Show {
       scheduleTime: showJson["schedule"]["time"],
       scheduleDays: showJson["schedule"]["days"].cast<String>(),
     );
+  }
+
+  Future<bool> isFavorite() async {
+    return await FavoriteShowsRepository().isInList(id);
+  }
+
+  Future<bool> setFavorite() async {
+    return await FavoriteShowsRepository().addOne(id);
+  }
+
+  Future<bool> unsetFavorite() async {
+    return await FavoriteShowsRepository().removeOne(id);
   }
 }

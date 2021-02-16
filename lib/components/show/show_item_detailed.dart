@@ -6,29 +6,72 @@ import 'package:jobsityChallenge/models/show.dart';
 
 import '../image_container.dart';
 
-class ShowItemDetailed extends StatelessWidget {
+class ShowItemDetailed extends StatefulWidget {
   final Show show;
 
   ShowItemDetailed(this.show);
 
   @override
+  _ShowItemDetailedState createState() => _ShowItemDetailedState();
+}
+
+class _ShowItemDetailedState extends State<ShowItemDetailed> {
+  bool isFavorite;
+
+  _load() async {
+    bool widgetshowIsFavorite = await widget.show.isFavorite();
+    setState(() {
+      isFavorite = widgetshowIsFavorite;
+    });
+  }
+
+  _toogleFavorite() async {
+    if (isFavorite)
+      await widget.show.unsetFavorite();
+    else if (!isFavorite) await widget.show.setFavorite();
+
+    setState(() {
+      isFavorite = !isFavorite;
+    });
+  }
+
+  @override
+  void initState() {
+    _load();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        if (show.imageUrl != null) ImageContainer(show.imageUrl),
+        if (isFavorite != null)
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(),
+              InkWell(
+                onTap: _toogleFavorite,
+                child: Icon(
+                  Icons.favorite,
+                  color: isFavorite ? Colors.red : null,
+                ),
+              )
+            ],
+          ),
+        if (widget.show.imageUrl != null) ImageContainer(widget.show.imageUrl),
         Text(
-          //"Name: " +
-          show.name,
+          widget.show.name,
           style: Theme.of(context).textTheme.headline3,
         ),
-        if (show.genres.isNotEmpty) Text(show.genres.join(", ")), //"Genres: "
+        if (widget.show.genres.isNotEmpty) Text(widget.show.genres.join(", ")),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Summary(show.summary),
+          child: Summary(widget.show.summary),
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 16.0),
-          child: Schedule(show),
+          child: Schedule(widget.show),
         ),
       ],
     );
