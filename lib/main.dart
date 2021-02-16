@@ -4,6 +4,7 @@ import 'package:jobsityChallenge/constants/app_constants.dart';
 import 'package:jobsityChallenge/screens/favorites/favorite_screen.dart';
 import 'package:jobsityChallenge/screens/people/people_list_screen.dart';
 import 'package:jobsityChallenge/screens/show/show_list_screen.dart';
+import 'package:jobsityChallenge/styles.dart';
 
 import 'bloc/people_list_screen/people_list_bloc.dart';
 import 'bloc/show_list_screen/show_list_bloc.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: AppConstants.APP_TITLE,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Styles.appPrimaryColor,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: HomeScreen([

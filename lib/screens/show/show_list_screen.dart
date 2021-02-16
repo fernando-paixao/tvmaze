@@ -24,11 +24,17 @@ class _ShowListScreenState extends State<ShowListScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(Styles.PADDING_SIZE),
+      padding: Styles.getMainEdgeInsets(),
       child: Column(children: [
         TextFormField(
           decoration: const InputDecoration(
-            icon: Icon(Icons.movie_filter),
+            icon: Padding(
+              padding: EdgeInsets.only(top: 24.0),
+              child: Icon(
+                Icons.movie_filter,
+                size: 32.0,
+              ),
+            ),
             hintText: 'Type here to search shows',
             labelText: 'Find',
           ),

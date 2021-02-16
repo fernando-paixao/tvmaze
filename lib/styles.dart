@@ -12,6 +12,8 @@ class Styles {
   static Color disabledBorderColor = Color(0x889AAAB8);
   static Color otpContainerOpened = Color(0xFFF3F3F3);
 
+  static Color appPrimaryColor = Colors.blue;
+
   static const double PADDING_SIZE = 8.0;
 
   static double fontSizeScale(Size size) {
@@ -23,6 +25,10 @@ class Styles {
     }
 
     return _fontSizeScale;
+  }
+
+  static EdgeInsets getMainEdgeInsets() {
+    return EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 0.0);
   }
 
   static ThemeData getDefaultThemeData(BuildContext context) {
@@ -58,6 +64,18 @@ class Styles {
         padding: EdgeInsets.symmetric(horizontal: 24),
       ),
     );
+  }
+
+  static double getSizeFactor(String sizeName) {
+    double sizeFactor;
+
+    if (sizeName == "big")
+      sizeFactor = 3 / 4;
+    else {
+      sizeFactor = 7 / 10;
+    }
+
+    return sizeFactor;
   }
 
   static TextTheme getTextTheme(double fontSizeFactor) {

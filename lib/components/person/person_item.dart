@@ -25,7 +25,7 @@ class PersonItem extends StatelessWidget {
             if (person.imageUrl != null)
               ImageContainer(
                 person.imageUrl,
-                size: "big",
+                sizeName: "big",
               ),
             Text(
               //"Name: " +

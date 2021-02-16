@@ -2,27 +2,18 @@ import 'package:flutter/material.dart';
 
 class ImageContainer extends StatelessWidget {
   final String imageUrl;
-  final String size;
+  final String sizeName;
 
-  ImageContainer(this.imageUrl, {this.size = "medium"});
+  ImageContainer(this.imageUrl, {this.sizeName = "medium"});
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
-    double heightFactor = 7 / 10;
-    if (size == "big") {
-      heightFactor = 3 / 4;
-    }
-    double widthFactor = 7 / 10;
-    if (size == "big") {
-      widthFactor = 3 / 4;
-    }
+    //double sizeFactor = Styles.getSizeFactor(sizeName);
 
     return ConstrainedBox(
       constraints: BoxConstraints(
-          maxWidth: widthFactor * size.width,
-          maxHeight: heightFactor * size.height),
+          maxWidth: 1 / 2 * size.width, maxHeight: 1 / 2 * size.height),
       child: Container(
         child: Image.network(imageUrl),
       ),

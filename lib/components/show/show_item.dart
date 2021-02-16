@@ -20,7 +20,7 @@ class ShowItem extends StatelessWidget {
             if (show.imageUrl != null)
               ImageContainer(
                 show.imageUrl,
-                size: "big",
+                sizeName: "big",
               ),
             Text(
               //"Name: " +

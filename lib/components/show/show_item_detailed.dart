@@ -4,6 +4,7 @@ import 'package:jobsityChallenge/components/schedule.dart';
 import 'package:jobsityChallenge/components/summary.dart';
 import 'package:jobsityChallenge/models/show.dart';
 
+import '../../styles.dart';
 import '../image_container.dart';
 
 class ShowItemDetailed extends StatefulWidget {
@@ -43,21 +44,29 @@ class _ShowItemDetailedState extends State<ShowItemDetailed> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Column(
       children: [
         if (isFavorite != null)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              SizedBox(),
-              InkWell(
-                onTap: _toogleFavorite,
-                child: Icon(
-                  Icons.favorite,
-                  color: isFavorite ? Colors.red : null,
-                ),
-              )
-            ],
+          SizedBox(
+            width: size.width * Styles.getSizeFactor("big"),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(),
+                InkWell(
+                  onTap: _toogleFavorite,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.favorite,
+                      color: isFavorite ? Colors.red : null,
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
         if (widget.show.imageUrl != null) ImageContainer(widget.show.imageUrl),
         Text(

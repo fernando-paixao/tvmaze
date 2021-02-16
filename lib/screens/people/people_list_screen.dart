@@ -24,11 +24,17 @@ class _PeopleListScreenState extends State<PeopleListScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(Styles.PADDING_SIZE),
+      padding: Styles.getMainEdgeInsets(),
       child: Column(children: [
         TextFormField(
           decoration: const InputDecoration(
-            icon: Icon(Icons.person),
+            icon: Padding(
+              padding: EdgeInsets.only(top: 24.0),
+              child: Icon(
+                Icons.person,
+                size: 32.0,
+              ),
+            ),
             hintText: 'Type here to search people',
             labelText: 'Find',
           ),

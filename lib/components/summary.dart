@@ -10,12 +10,15 @@ class Summary extends StatelessWidget {
   Widget build(BuildContext context) {
     return (summary == null)
         ? SizedBox()
-        : Column(children: [
-            //Text("Summary:"),
-            Html(
-              data: summary,
-              defaultTextStyle: Theme.of(context).textTheme.bodyText2,
-            ),
-          ]);
+        : Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(children: [
+              //Text("Summary:"),
+              Html(
+                data: summary,
+                defaultTextStyle: Theme.of(context).textTheme.bodyText2,
+              ),
+            ]),
+          );
   }
 }
