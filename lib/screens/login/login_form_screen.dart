@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobsityChallenge/components/loading.dart';
 import 'package:jobsityChallenge/repository/biometric_login_repository.dart';
 import 'package:jobsityChallenge/repository/pin_repository.dart';
 import 'package:jobsityChallenge/screens/favorites/favorite_screen.dart';
@@ -25,12 +26,20 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
     String storedPin = await PinRepository().getPin();
     bool storedBiometricLogin =
         await BiometricLoginRepository().getIsActive() ?? false;
-    bool canCheckBiometrics = await LocalAuthentication().canCheckBiometrics;
+
+    bool canCheckBiometrics;
+    try {
+      canCheckBiometrics = await LocalAuthentication().canCheckBiometrics;
+    } catch (e) {
+      canCheckBiometrics = true;
+      print(e);
+    }
 
     if (canCheckBiometrics && storedBiometricLogin) _showBiometricLogin();
 
     setState(() {
       isLoaded = true;
+      activateBiometricLogin = false;
       pinToMatch = storedPin;
       isActiveBiometricLogin = storedBiometricLogin;
       canUseBiometricLogin = canCheckBiometrics;
@@ -38,11 +47,19 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
   }
 
   _showBiometricLogin() async {
-    bool didAuthenticate = await LocalAuthentication()
-        .authenticateWithBiometrics(
-            localizedReason: 'Try to login using your biometry');
-    if (didAuthenticate) {
-      _login();
+    bool didAuthenticate = false;
+    try {
+      didAuthenticate = await LocalAuthentication().authenticateWithBiometrics(
+          localizedReason: 'Try to login using your biometry');
+      if (didAuthenticate) {
+        _login();
+      }
+    } catch (e) {
+      print(e);
+    }
+    if (didAuthenticate == null || didAuthenticate == false) {
+      Scaffold.of(context).showSnackBar(
+          SnackBar(content: Text("Biometric check failed, please try again")));
     }
   }
 
@@ -84,7 +101,7 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
   @override
   Widget build(BuildContext context) {
     return !isLoaded
-        ? Text("Loading")
+        ? Loading()
         : Padding(
             padding: const EdgeInsets.only(top: 32.0),
             child: Column(
@@ -105,24 +122,36 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
                   ),
                 ),
                 if (canUseBiometricLogin && isActiveBiometricLogin)
-                  RaisedButton(
-                      child: Text("Biometric Login"),
-                      onPressed: () {
-                        _showBiometricLogin();
-                      })
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: RaisedButton(
+                        child: Text("Biometric Login"),
+                        onPressed: () {
+                          _showBiometricLogin();
+                        }),
+                  )
                 else if (canUseBiometricLogin && !isActiveBiometricLogin)
-                  Switch(
-                    value: false,
-                    onChanged: (value) {
-                      setState(() {
-                        activateBiometricLogin = value;
-                      });
-                    },
-                    activeTrackColor: Colors.lightGreenAccent,
-                    activeColor: Colors.green,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Activate Biometric Login"),
+                        Switch(
+                          value: activateBiometricLogin,
+                          onChanged: (value) {
+                            setState(() {
+                              activateBiometricLogin = value;
+                            });
+                          },
+                          activeTrackColor: Colors.lightBlueAccent,
+                          activeColor: Colors.blue,
+                        ),
+                      ],
+                    ),
                   ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 32.0),
+                  padding: const EdgeInsets.only(top: 16.0),
                   child: RaisedButton(
                       child: (pinToMatch == null || pinToMatch.isEmpty)
                           ? Text("Register")

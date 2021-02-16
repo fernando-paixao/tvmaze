@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobsityChallenge/components/loading.dart';
 import 'package:jobsityChallenge/components/show/show_item_detailed.dart';
 import 'package:jobsityChallenge/constants/app_constants.dart';
 import 'package:jobsityChallenge/models/show.dart';
@@ -47,7 +48,7 @@ class _ShowDetailsScreen extends State<ShowDetailsScreen> {
       );
       list.addAll(seasonItems);
     } else {
-      list.add(Text("Loading"));
+      list.add(Loading());
     }
 
     return Scaffold(

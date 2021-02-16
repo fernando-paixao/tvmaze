@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobsityChallenge/components/loading.dart';
 import 'package:jobsityChallenge/components/show/show_item.dart';
 import 'package:jobsityChallenge/models/show.dart';
 import 'package:jobsityChallenge/repository/favorite_shows_repository.dart';
@@ -60,7 +61,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
       );
       list.addAll(showsItems);
     } else if (isLoaded == false) {
-      list.add(Text("Loading"));
+      list.add(Loading());
     } else {
       list.add(Center(child: EmptyList()));
     }

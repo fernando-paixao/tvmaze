@@ -1,22 +1,45 @@
 part of 'show_list_bloc.dart';
 
-abstract class ShowListState {}
+//put equatable to compare in bloc test
 
-class ShowListEmpty extends ShowListState {}
+abstract class ShowListState extends Equatable {}
 
-class ShowListLoading extends ShowListState {}
+class ShowListEmpty extends ShowListState {
+  @override
+  List<Object> get props => ["ShowListEmpty"];
+}
+
+class ShowListLoading extends ShowListState {
+  @override
+  List<Object> get props => ["ShowListLoading"];
+}
 
 class ShowListLoaded extends ShowListState {
   final List<Show> updatedShowList;
   int page;
 
   ShowListLoaded(this.updatedShowList, this.page);
+  @override
+  List<Object> get props {
+    List<String> props = ["ShowListLoaded", this.page.toString()];
+    props.addAll(this.updatedShowList.map((e) => e.name).toList());
+    return props;
+  }
 }
 
 class ShowFilteredListLoaded extends ShowListState {
   ShowFilteredListLoaded(this.updatedShowList);
 
   final List<Show> updatedShowList;
+  @override
+  List<Object> get props {
+    List<String> props = ["ShowListLoaded"];
+    props.addAll(this.updatedShowList.map((e) => e.name).toList());
+    return props;
+  }
 }
 
-class ShowListError extends ShowListState {}
+class ShowListError extends ShowListState {
+  @override
+  List<Object> get props => ["ShowListError"];
+}
